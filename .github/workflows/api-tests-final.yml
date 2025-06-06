@@ -18,7 +18,7 @@ jobs:
         run: echo "Building docker image."
   deploy-dev:
     runs-on: docker
-  needs: [build-docker-image]
+    needs: [build-docker-image]
     steps:
       - name: Print output
         run: echo Deploying application
