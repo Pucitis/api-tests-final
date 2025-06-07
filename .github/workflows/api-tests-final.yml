@@ -16,5 +16,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build image
         run: docker build -t martinowl/api-tests:latest . 
+      
+      - name: Push image
+        run: docker push martinowl/api-tests:latest
   
   
